@@ -6,6 +6,7 @@
 Количество нейронов на слоях
 Шаг обучения Batch_size = 256, epoch = 200.
 Исходная нейросеть
+
     tf.keras.layers.Input(shape=(224,224,3)),
     tf.keras.layers.Conv2D(filters=8, kernel_size=3),
     tf.keras.layers.MaxPool2D(),
@@ -13,6 +14,7 @@
     tf.keras.layers.MaxPool2D(),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
+    
 Image alt
 
 ![Image alt]()
